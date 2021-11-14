@@ -14,7 +14,8 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -33,6 +34,22 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script>
+    function subForm() {
+      $.ajax({
+        url: 'https://script.google.com/macros/s/AKfycbxXskaW4uGHgrKN3DmjI5q9jbRiy17QriU60VpIHLbaw4PTMTjjQY88BsonKCldk9UL/exec',
+        type: 'post',
+        data: $("#myForm").serializeArray(),
+        success: function () {
+          alert("Form Data Submitted :)")
+        },
+        error: function () {
+          alert("There was an error :(")
+        }
+      });
+    }
+  </script>
 </head>
 
 <body>
@@ -45,27 +62,59 @@
 
     <nav id="navbar" class="navbar nav-menu">
       <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li>
+          <a href="#hero" class="nav-link scrollto active">
+            <i class="bx bx-home"></i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#about" class="nav-link scrollto">
+            <i class="bx bx-user"></i>
+            <span>About</span>
+          </a>
+        </li>
+        <li>
+          <a href="#resume" class="nav-link scrollto">
+            <i class="bx bx-file-blank"></i>
+            <span>Resume</span>
+          </a>
+        </li>
         <!-- <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li> -->
-        <li><a href="#Certifications" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Certifications</span></a></li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        <li>
+          <a href="#Certifications" class="nav-link scrollto">
+            <i class="bx bx-server"></i>
+            <span>Certifications</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-link scrollto">
+            <i class="bx bx-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </li>
       </ul>
-    </nav><!-- .nav-menu -->
+    </nav>
+    <!-- .nav-menu -->
 
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Naveen Sai Yenuga</h1>
-      <p>I'm <span class="typed" data-typed-items="Quality Assurance Automation Test Engineer"></span></p>
+      <p>I'm
+        <span class="typed" data-typed-items="Quality Assurance Automation Test Engineer"></span>
+      </p>
       <div class="social-links">
-        <a href="https://www.linkedin.com/in/naveen-sai-738b37186/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/naveen-sai-738b37186/" target="_blank" class="linkedin">
+          <i class="bx bxl-linkedin"></i>
+        </a>
       </div>
     </div>
-  </section><!-- End Hero -->
+  </section>
+  <!-- End Hero -->
 
   <main id="main">
 
@@ -75,7 +124,9 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <p>I'am an Excellent problem solver with good analytical skills, solid understanding of a software development and computer programming, highly organized and creative, possess engineering leadership, strong research skills, excellent written and communication skills with high proficiency in writing automation scripts.</p>
+          <p>I'am an Excellent problem solver with good analytical skills, solid understanding of a software development and
+            computer programming, highly organized and creative, possess engineering leadership, strong research skills,
+            excellent written and communication skills with high proficiency in writing automation scripts.</p>
         </div>
 
         <div class="row">
@@ -90,29 +141,56 @@
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>6<sup>th</sup> Oct 1997</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Birthday:</strong>
+                    <span>6
+                      <sup>th</sup> Oct 1997</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Website:</strong>
+                    <span>www.example.com</span>
+                  </li>
                   <!-- <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li> -->
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Vuyyuru, A.P</span></li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>City:</strong>
+                    <span>Vuyyuru, A.P</span>
+                  </li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>24</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor's Degree</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>naveensai679@gmail.com</span></li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Age:</strong>
+                    <span>24</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Degree:</strong>
+                    <span>Bachelor's Degree</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>PhEmailone:</strong>
+                    <span>naveensai679@gmail.com</span>
+                  </li>
                   <!-- <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li> -->
                 </ul>
               </div>
             </div>
             <p>
-              I am graduated from TurboMachinery Institute of Technology and Sciences, Hyderabad, Telangana, With B.Tech in Mechanical engineering.
+              I am graduated from TurboMachinery Institute of Technology and Sciences, Hyderabad, Telangana, With B.Tech in Mechanical
+              engineering.
             </p>
           </div>
         </div>
 
       </div>
-    </section><!-- End About Section -->
+    </section>
+    <!-- End About Section -->
 
     <!-- ======= Facts Section ======= -->
     <section id="facts" class="facts">
@@ -160,7 +238,8 @@
         </div>
 
       </div>
-    </section><!-- End Facts Section -->
+    </section>
+    <!-- End Facts Section -->
 
     <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills section-bg">
@@ -176,70 +255,90 @@
           <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill">Java <i class="val">100%</i></span>
+              <span class="skill">Java
+                <i class="val">100%</i>
+              </span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">Selenium <i class="val">100%</i></span>
+              <span class="skill">Selenium
+                <i class="val">100%</i>
+              </span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">SQL <i class="val">100%</i></span>
+              <span class="skill">SQL
+                <i class="val">100%</i>
+              </span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">JUnit <i class="val">100%</i></span>
+              <span class="skill">JUnit
+                <i class="val">100%</i>
+              </span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">Maven <i class="val">100%</i></span>
+              <span class="skill">Maven
+                <i class="val">100%</i>
+              </span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">Test NG <i class="val">100%</i></span>
+              <span class="skill">Test NG
+                <i class="val">100%</i>
+              </span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">UBuild <i class="val">100%</i></span>
+              <span class="skill">UBuild
+                <i class="val">100%</i>
+              </span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">Test Complete <i class="val">100%</i></span>
+              <span class="skill">Test Complete
+                <i class="val">100%</i>
+              </span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">Cucumber <i class="val">100%</i></span>
+              <span class="skill">Cucumber
+                <i class="val">100%</i>
+              </span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">CRAFT Framework <i class="val">100%</i></span>
+              <span class="skill">CRAFT Framework
+                <i class="val">100%</i>
+              </span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
@@ -250,63 +349,81 @@
           <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill">Integration Testing <i class="val">100%</i></span>
+              <span class="skill">Integration Testing
+                <i class="val">100%</i>
+              </span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">Regression Testing <i class="val">100%</i></span>
+              <span class="skill">Regression Testing
+                <i class="val">100%</i>
+              </span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">HTML <i class="val">100%</i></span>
+              <span class="skill">HTML
+                <i class="val">100%</i>
+              </span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">CSS <i class="val">90%</i></span>
+              <span class="skill">CSS
+                <i class="val">90%</i>
+              </span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">JavaScript <i class="val">75%</i></span>
+              <span class="skill">JavaScript
+                <i class="val">75%</i>
+              </span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">GitHub <i class="val">100%</i></span>
+              <span class="skill">GitHub
+                <i class="val">100%</i>
+              </span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">SDLC &amp; STLC <i class="val">100%</i></span>
+              <span class="skill">SDLC &amp; STLC
+                <i class="val">100%</i>
+              </span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">JIRA <i class="val">100%</i></span>
+              <span class="skill">JIRA
+                <i class="val">100%</i>
+              </span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">Cloud Skytap <i class="val">100%</i></span>
+              <span class="skill">Cloud Skytap
+                <i class="val">100%</i>
+              </span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
@@ -317,7 +434,8 @@
         </div>
 
       </div>
-    </section><!-- End Skills Section -->
+    </section>
+    <!-- End Skills Section -->
 
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
@@ -325,65 +443,88 @@
 
         <div class="section-title">
           <h2>Resume</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur
+            velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis
+            commodi quidem hic quas.</p> -->
         </div>
 
         <div class="row">
           <div class="col-lg-6">
             <h3 class="resume-title">Sumary</h3>
             <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+              <h4>Naveen Sai Yenuga</h4>
+              <p>
+                <em>Innovative and highly dedicated QA Automation Engineer with 2+ years of experience designing and developing automation scripts for 
+                  digital appications from initial concept to final, polished deliverable.</em>
+              </p>
               <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
+                <li>Vuyyuru, Andhra Pradesh.</li>
+                <li>naveensai679@gmail.com</li>
               </ul>
             </div>
 
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+              <h4>Bachelor Of Technology</h4>
+              <h5>2015 - 2019</h5>
+              <p>
+                <em>Dhanekua Institute of Engineering &amp; Technology, Vijayawada, A.P</em>
+              </p>
+                <p>Completed Bachelor of Technology in Electronics &amp; Communications with 71%</p>
             </div>
             <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+              <h4>Inermediate</h4>
+              <h5>2013 - 2015</h5>
+              <p>
+                <em>PRSMN Junior College, Vuyyuru, A.P</em>
+              </p>
+              <p>Maths - Physics - Chemistry</p>
+              <p>Completed Intermediate with 88%</p>
             </div>
+            <div class="resume-item">
+                <h4>SSC</h4>
+                <h5>2012 - 2013</h5>
+                <p>
+                  <em>Flora English Medium High School, Vuyyuru, A.P</em>
+                </p>
+                <p>Completed Secondary school with 78%</p>
+              </div>
           </div>
           <div class="col-lg-6">
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
+              <h4>Programmer Analyst</h4>
+              <h5>2020 - Present</h5>
+              <p>
+                <em>Cognizant Technology Solutions, Hyderabad, India. </em>
+              </p>
               <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+                <li>Developed Automation test cases with complex reusable components for Salesforce applications (Release Force Mercury, Digital Force, CAR &amp; Promo Order Portal) to a US based Client</li>
+                <li>Involved in automation of test script development, script enhancement and maintenance of Salesforce, UO/USH and Compass applications. </li>
+                <li>Involved in identifying and creating complex XPath expressions, Object locators and developed Reusable components with minimal maintainence in QA and Stage Environments.</li>
+                <li>Involved in developing automation scripts for Frames, Alert handling and windows handling.</li>
               </ul>
             </div>
             <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
+              <h4>Programmer Analyst Trainee</h4>
+              <h5>2019 - 2020</h5>
+              <p>
+                <em>Cognizant Technology Solutions, Chennai, India. </em>
+              </p>
               <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+                <li>Trained on Java, Selenium, Maven, SQL, JavaScript, HTML, CSS technologies</li>
+                <li>Developed complex automation scripts for Compass Replatform and Compass Finance using CRAFT Framework</li>
+                <li>Developed and Test scenarios and Test cases using Test NG, Cucumber</li>
+                <li>Good Exposure on SDLC, STLC and defect life cycles</li>
+                <li>Involved in Developing test frameworks which are used across multiple teams</li>
               </ul>
             </div>
           </div>
         </div>
 
       </div>
-    </section><!-- End Resume Section -->
+    </section>
+    <!-- End Resume Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <!-- <section id="portfolio" class="portfolio section-bg">
@@ -557,7 +698,9 @@
                 </svg>
                 <i class="bx bxl-dribbble"></i>
               </div>
-              <h4><a href="assets/img/certifications/AI_Foundation_Level_Exam.pdf" target="_blank">AI Foundation Level Exam</a></h4>
+              <h4>
+                <a href="assets/img/certifications/AI_Foundation_Level_Exam.pdf" target="_blank">AI Foundation Level Exam</a>
+              </h4>
               <!-- <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p> -->
             </div>
           </div>
@@ -570,7 +713,9 @@
                 </svg>
                 <i class="bx bx-file"></i>
               </div>
-              <h4><a href="assets/img/certifications/AI_Fundamentals.pdf" target="_blank">AI Fundamentals</a></h4>
+              <h4>
+                <a href="assets/img/certifications/AI_Fundamentals.pdf" target="_blank">AI Fundamentals</a>
+              </h4>
               <!-- <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p> -->
             </div>
           </div>
@@ -630,7 +775,8 @@
         </div>
 
       </div>
-    </section><!-- End Services Section -->
+    </section>
+    <!-- End Services Section -->
 
     <!-- ======= Testimonials Section ======= -->
     <!-- <section id="testimonials" class="testimonials section-bg">
@@ -751,7 +897,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form id="myForm" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -771,17 +917,21 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
+                <div class="text-center">
+                  <button onclick="subForm()">Send Message</button>
+                </div>
 
           </div>
 
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section>
+    <!-- End Contact Section -->
 
-  </main><!-- End #main -->
+  </main>
+  <!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -793,23 +943,28 @@
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
         <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
         <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
-        <a href="https://www.linkedin.com/in/naveen-sai-738b37186/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/naveen-sai-738b37186/" target="_blank" class="linkedin">
+          <i class="bx bxl-linkedin"></i>
+        </a>
       </div>
       <!-- <div class="copyright"> -->
-        <!-- &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved -->
+      <!-- &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved -->
       <!-- </div> -->
       <!-- <div class="credits"> -->
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: [license-url] -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: [license-url] -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+      <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
       <!-- </div> -->
     </div>
-  </footer><!-- End Footer -->
+  </footer>
+  <!-- End Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
